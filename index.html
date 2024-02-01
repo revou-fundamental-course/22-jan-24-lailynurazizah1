@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scales=1">
+        <title>MyCustomPop</title>
+        <link rel="stylesheet" href="css/style.css"></link>
+        <script src="js/script.js"></script>
+    </head>
+    <body>
+        <nav class="navigation">
+            <img id="logo" src="assets/logo.png">
+            <ul class="navigation-items">
+                <li><a href="#welcome">Home</a></li>
+                <li><a href="#product">Our Product</a></li>
+                <li><a href="#call">Call Us</a></li>
+            </ul>
+        </nav>
+
+        <hr>
+
+        <header id="welcome">
+            <h1>Welcome to MyCustomPop</h1>
+            <p>Create your merchandise with the dream design.</p>
+        </header>
+
+        <div class="box">
+            <div class="slideshow">
+                <div class="slider">
+                    <img src="Assets/1.png" style="width:100%">
+                </div>
+                <div class="slider">
+                    <img src="Assets/2.png" style="width:100%">
+                </div>
+                <div class="slider">
+                    <img src="Assets/3.png" style="width:100%">
+                </div>
+                <div class="slider">
+                    <img src="Assets/4.png" style="width:100%">
+                </div>
+                <div class="slider">
+                    <img src="Assets/5.png" style="width:100%">
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+                <div style="text-align:center">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+            <div class="cs">
+                <form name="contact-us" onsubmit="return validateForm()">
+                    <fieldset>
+                        <legend>Contact Us</legend>
+                        <div class="row">
+                            <label class="column1">Name:</label>
+                            <input class="column2" type="text" id="name" name="name" placeholder="Your name">
+                        </div>
+                        <div class="row">
+                            <label class="column1">Email Address:</label>
+                            <input class="column2" type="text" id="email" name="email" placeholder="example@gmail.com">
+                        </div>
+                        <div class="row">
+                            <label class="column1">What are you interested in?</label>
+                            <select class="column2" id="items" name='items'>
+                                <option value="">-Select Product-</option>
+                                <option value='banner'>Hand Banner</option>
+                                <option value='slogan'>Slogan</option>
+                                <option value='fan'>Fan</option>
+                                <option value='pc'>Photocard</option>
+                                <option value='key'>Keychain</option>
+                            </select>
+                        </div>
+                        <div class="row">
+                            <label class="column1">Messages:</label>
+                            <textarea class="column2" type="text" id="messages" name="messages" placeholder="Your messages"></textarea>
+                        </div>
+                        <p class="error" id="error"></p>
+                        <p class="row">
+                            <input type="submit" name="submit" value="Submit">
+                        </p>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+        <div class="reason">
+            <p style="font-size: 30px;"><b>Why should be our shop?</b></p>
+            <ul>
+                <li>Our shop is safe and trustworthy</li>
+                <li>the products produced are of high quality</li>
+                <li>accept all designs</li>
+            </ul>
+        </div>
+        <div class="product" id="product">
+            <div class="our-product">
+                <h2>Our Product</h2>
+            </div>
+            <div class="product1">
+                <div>
+                    <div class="circle" style="background-image: url('Assets/banner1.jpeg')"></div>
+                    <p>Hand Banner</p>
+                </div>
+                <div>
+                    <div class="circle" style="background-image: url('Assets/slogan1.jpeg')"></div>
+                    <p>Slogan</p>
+                </div>
+                <div>
+                    <div class="circle" style="background-image: url('Assets/fan1.jpeg')"></div>
+                    <p>Fan</p>
+                </div>
+            </div>
+            <div class="product2">
+                <div>
+                    <div class="circle"  style="background-image: url('Assets/pc1.jpeg')"></div>
+                    <p>Photocard</p>
+                </div>
+                <div>
+                    <div class="circle" style="background-image: url('Assets/key1.jpeg')"></div>
+                    <p>Keychain</p>
+                </div>
+            </div>
+        </div>
+        <div class="call-us" id="call">
+            <h3><b>Any Question?</b></h3>
+            <p>Call us now and we will happy to help</p>
+            <p class="button-call"><b>Call Us!</b></p>
+        </div>
+    </body>
+    <footer>
+        <hr>
+        <p>2024 MyCustomPop Copyright.</p>
+    </footer>
+</html>
